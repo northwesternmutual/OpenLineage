@@ -54,6 +54,7 @@ import org.apache.spark.sql.types.StructType;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.io.TempDir;
@@ -62,6 +63,7 @@ import org.mockito.Mockito;
 import scala.Tuple2;
 import scala.collection.immutable.HashMap;
 
+@Tag("integration-test")
 @ExtendWith(SparkAgentTestExtension.class)
 public class SparkReadWriteIntegTest {
 
